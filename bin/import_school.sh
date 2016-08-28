@@ -1,0 +1,1 @@
+curl -X POST -H "X-Parse-Application-Id: OS_WEB_SERVER" -H "X-Parse-REST-API-Key: OPEN_SCHOOL_2016" -H "Content-Type: application/json" -d @../data/school.json https://openschool.herokuapp.com/parse/functions/import
