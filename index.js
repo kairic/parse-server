@@ -8,7 +8,7 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-  serverURL: "https://openschool.herokuapp.com/parse",
+  serverURL: "https://os-parse-server.herokuapp.com/parse",
   databaseURI: process.env.MONGODB_URI,
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID,
@@ -23,5 +23,5 @@ app.use(mountPath, api);
 
 var port = process.env.PORT || 1337;
 app.listen(port, function() {
-    console.log('parse-server-example running on port ' + port + '.');
+    console.log('parse-server running on port ' + port + '.');
 });
